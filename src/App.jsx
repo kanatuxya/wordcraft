@@ -14,7 +14,7 @@ const FONTS_HREF =
 
 async function generateDeck(text, level) {
   try {
-    const res = await fetch("http://localhost:3001/api/generate-cards", {
+    const res = await fetch("https://wordcraft-server-production.up.railway.app/api/generate-cards", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ text, level }),
